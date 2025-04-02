@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinTools</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #1976d2;
+        }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .note {
+            background-color: #f8f8f8;
+            padding: 10px;
+            border-left: 4px solid #1976d2;
+            margin-bottom: 20px;
+        }
+        .success {
+            color: #388e3c;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>FinTools Application</h1>
+    
+    <div class="card">
+        <h2>Backend Status</h2>
+        <p class="success">✓ Server is running at http://localhost:5000</p>
+        <p class="success">✓ MongoDB Atlas connection successful</p>
+    </div>
+    
+    <div class="card">
+        <h2>Frontend Status</h2>
+        <p>✗ React application has dependency issues</p>
+        <div class="note">
+            <p>The frontend application has dependency issues with your Node.js version (v22.14.0).</p>
+            <p>Please consider the following options:</p>
+            <ol>
+                <li>Downgrade Node.js to a more stable version (v18.x LTS recommended)</li>
+                <li>Try running with npx: <code>npx react-scripts start</code></li>
+                <li>Manually install the missing dependencies</li>
+            </ol>
+        </div>
+    </div>
+    
+    <div class="card">
+        <h2>Backend API Endpoints</h2>
+        <ul>
+            <li><a href="http://localhost:5000/api/v1/revenues" target="_blank">Revenues API</a></li>
+            <li><a href="http://localhost:5000/api/v1/expenses" target="_blank">Expenses API</a></li>
+            <li><a href="http://localhost:5000/api/v1/assets" target="_blank">Assets API</a></li>
+            <li><a href="http://localhost:5000/api/v1/dashboard/summary" target="_blank">Dashboard Summary</a></li>
+        </ul>
+        <p>Note: These endpoints require authentication.</p>
+    </div>
+    
+    <p>For more information, please refer to the documentation or contact support.</p>
+</body>
+</html> 

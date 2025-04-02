@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Helvetica Neue',
+    'Helvetica', 'Arial', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F2F2F7;
+  color: #000000;
+  overflow-x: hidden;
+}
+
+/* Fix iOS momentum scrolling */
+html, body {
+  overscroll-behavior-y: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Better tap targets for mobile */
+button, 
+[role="button"], 
+input, 
+select, 
+textarea {
+  touch-action: manipulation;
+}
+
+code {
+  font-family: 'SF Mono', SFMono-Regular, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Apple-style text selection */
+::selection {
+  background-color: rgba(0, 122, 255, 0.2);
+}
+
+/* Typography adjustments */
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -0.015em;
+}
+
+/* Utility classes */
+.positive-number {
+  color: #34C759; /* Apple green */
+}
+
+.negative-number {
+  color: #FF3B30; /* Apple red */
+}
+
+/* Card styling */
+.dashboard-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.dashboard-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styling */
+.custom-table {
+  min-width: 650px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+@media (max-width: 600px) {
+  .custom-table {
+    min-width: auto;
+    width: 100%;
+  }
+}
+
+/* Form styling */
+.auth-form {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background-color: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Mobile optimizations */
+@media (max-width: 600px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+  
+  .full-width-on-mobile {
+    width: 100% !important;
+  }
+  
+  .center-on-mobile {
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  
+  /* Fix MUI table on mobile */
+  .MuiTableCell-root {
+    padding: 12px 8px !important;
+  }
+  
+  .MuiTableCell-sizeSmall {
+    padding: 8px 4px !important;
+  }
+}
+
+/* Improve scrolling experience */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Utility classes */
+.mt-2 {
+  margin-top: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 1rem;
+}
+
+.centered-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* iOS-style button effect */
+.ios-button {
+  transition: opacity 0.2s ease;
+}
+
+.ios-button:active {
+  opacity: 0.7;
+}
+
+/* iOS-style card */
+.ios-card {
+  border-radius: 16px;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* iOS shadows */
+.ios-shadow-sm {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.ios-shadow {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.ios-shadow-lg {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+} 
